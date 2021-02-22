@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Install dependencies
-        run: apt-get update && apt-get install -y redis-tools
+        run: apt-get -q update && apt-get install -y redis-tools make
 
       # Downloads a copy of the code in your repository before running CI tests
       - name: Check out repository code
