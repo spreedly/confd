@@ -23,6 +23,10 @@ jobs:
           --health-retries 5
       dynamodb:
         image: amazon/dynamodb-local
+      consul:
+        image: consul
+        ports:
+          - 8500:8500
 
     steps:
       - name: Install dependencies
@@ -63,3 +67,13 @@ jobs:
           DYNAMODB_LOCAL: dynamodb
           # The default DynamoDB port
           DYNAMODB_PORT: 8000
+
+      - name: Test Consul
+        run: |
+          integration/consul/test.sh
+          integration/expect/check.sh
+        env:
+          # The hostname used to communicate with the DynamoDB service container
+          CONSUL_HOST: consul
+          # The default DynamoDB port
+          CONSUL_PORT: 8500
