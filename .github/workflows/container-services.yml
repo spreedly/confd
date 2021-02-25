@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           apt-get -q update
-          DEBIAN_FRONTEND="noninteractive" apt-get install -y git make redis-tools sudo awscli
+          DEBIAN_FRONTEND="noninteractive" apt-get install -y git curl make redis-tools sudo awscli
 
       # Downloads a copy of the code in your repository before running CI tests
       - name: Check out repository code
