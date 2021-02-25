@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export HOSTNAME="localhost"
 export AWS_ACCESS_KEY_ID="foo"
 export AWS_SECRET_ACCESS_KEY="bar"
 export AWS_REGION="eu-west-1"
