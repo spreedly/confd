@@ -21,12 +21,14 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
+      dynamodb:
+        image: amazon/dynamodb-local
 
     steps:
       - name: Install dependencies
         run: |
           apt-get -q update
-          apt-get install -y git make redis-tools sudo
+          apt-get install -y git make redis-tools sudo awscli
 
       # Downloads a copy of the code in your repository before running CI tests
       - name: Check out repository code
@@ -51,3 +53,13 @@ jobs:
           REDIS_HOST: redis
           # The default Redis port
           REDIS_PORT: 6379
+
+      - name: Test DynamoDB
+        run: |
+          integration/dynamodb/test.sh
+          integration/expect/check.sh
+        env:
+          # The hostname used to communicate with the DynamoDB service container
+          DYNAMODB_LOCAL: dynamodb
+          # The default DynamoDB port
+          DYNAMODB_PORT: 8000
