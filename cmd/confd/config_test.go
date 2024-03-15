@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/abtreece/confd/pkg/log"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 func TestInitConfigDefaultConfig(t *testing.T) {

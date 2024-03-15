@@ -8,9 +8,9 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/abtreece/confd/pkg/backends"
-	"github.com/abtreece/confd/pkg/log"
-	"github.com/abtreece/confd/pkg/template"
+	"github.com/spreedly/confd/pkg/backends"
+	"github.com/spreedly/confd/pkg/log"
+	"github.com/spreedly/confd/pkg/template"
 )
 
 func main() {

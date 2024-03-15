@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/abtreece/confd/pkg/log"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 // createDirStructure() creates the following directory structure:
@@ -16,22 +16,23 @@ import (
 // │   ├── sym1.toml
 // │   └── sym2.toml
 // └── root
-//     ├── root.other1
-//     ├── root.toml
-//     ├── subDir1
-//     │   ├── sub1.other
-//     │   ├── sub1.toml
-//     │   └── sub12.toml
-//     ├── subDir2
-//     │   ├── sub2.other
-//     │   ├── sub2.toml
-//     │   ├── sub22.toml
-//     │   └── subSubDir
-//     │       ├── subsub.other
-//     │       ├── subsub.toml
-//     │       ├── subsub2.toml
-//     │       └── sym2.toml -> ../../../other/sym2.toml
-//     └── sym1.toml -> ../other/sym1.toml
+//
+//	├── root.other1
+//	├── root.toml
+//	├── subDir1
+//	│   ├── sub1.other
+//	│   ├── sub1.toml
+//	│   └── sub12.toml
+//	├── subDir2
+//	│   ├── sub2.other
+//	│   ├── sub2.toml
+//	│   ├── sub22.toml
+//	│   └── subSubDir
+//	│       ├── subsub.other
+//	│       ├── subsub.toml
+//	│       ├── subsub2.toml
+//	│       └── sym2.toml -> ../../../other/sym2.toml
+//	└── sym1.toml -> ../other/sym1.toml
 func createDirStructure() (string, error) {
 	mod := os.FileMode(0755)
 	flag := os.O_RDWR | os.O_CREATE | os.O_EXCL

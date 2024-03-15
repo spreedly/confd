@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/abtreece/confd/pkg/backends"
+	"github.com/spreedly/confd/pkg/backends"
 )
 
 const (

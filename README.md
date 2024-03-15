@@ -2,8 +2,8 @@
 
 # confd
 
-[![Integration Tests](https://github.com/abtreece/confd/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/abtreece/confd/actions/workflows/integration-tests.yml)
-[![CodeQL](https://github.com/abtreece/confd/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/abtreece/confd/actions/workflows/codeql-analysis.yml)
+[![Integration Tests](https://github.com/spreedly/confd/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/spreedly/confd/actions/workflows/integration-tests.yml)
+[![CodeQL](https://github.com/spreedly/confd/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/spreedly/confd/actions/workflows/codeql-analysis.yml)
 
 
 `confd` is a lightweight configuration management tool focused on:
@@ -21,7 +21,7 @@
 Go 1.12 is required to build confd, which uses Go Modules
 
 ```
-$ git clone https://github.com/abtreece/confd.git
+$ git clone https://github.com/spreedly/confd.git
 $ cd confd
 $ make
 ```

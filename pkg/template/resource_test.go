@@ -7,8 +7,8 @@ import (
 	"testing"
 	"text/template"
 
-	"github.com/abtreece/confd/pkg/backends/env"
-	"github.com/abtreece/confd/pkg/log"
+	"github.com/spreedly/confd/pkg/backends/env"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 // createTempDirs is a helper function which creates temporary directories

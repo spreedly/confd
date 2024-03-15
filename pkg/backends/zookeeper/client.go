@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/abtreece/confd/pkg/log"
 	zk "github.com/go-zookeeper/zk"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 // Client provides a wrapper around the zookeeper client

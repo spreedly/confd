@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/abtreece/confd/pkg/log"
 	"github.com/gomodule/redigo/redis"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 type watchResponse struct {

@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/abtreece/confd/pkg/log"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 var replacer = strings.NewReplacer("/", "_")

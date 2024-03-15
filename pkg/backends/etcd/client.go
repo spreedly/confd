@@ -10,7 +10,7 @@ import (
 
 	"sync"
 
-	"github.com/abtreece/confd/pkg/log"
+	"github.com/spreedly/confd/pkg/log"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

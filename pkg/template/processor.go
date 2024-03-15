@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/abtreece/confd/pkg/log"
-	util "github.com/abtreece/confd/pkg/util"
+	"github.com/spreedly/confd/pkg/log"
+	util "github.com/spreedly/confd/pkg/util"
 )
 
 type Processor interface {

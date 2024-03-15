@@ -6,7 +6,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/abtreece/confd/pkg/log"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 // Nodes is a custom flag Var representing a list of etcd nodes.

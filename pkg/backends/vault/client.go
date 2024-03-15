@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"path"
 
-	"github.com/abtreece/confd/pkg/log"
 	vaultapi "github.com/hashicorp/vault/api"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 // Client is a wrapper around the vault client

@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	util "github.com/abtreece/confd/pkg/util"
 	"github.com/kelseyhightower/memkv"
+	util "github.com/spreedly/confd/pkg/util"
 )
 
 func newFuncMap() map[string]interface{} {
@@ -109,8 +109,8 @@ func SortByLength(values []string) []string {
 	return values
 }
 
-//Reverse returns the array in reversed order
-//works with []string and []KVPair
+// Reverse returns the array in reversed order
+// works with []string and []KVPair
 func Reverse(values interface{}) interface{} {
 	switch values.(type) {
 	case []string:

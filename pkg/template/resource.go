@@ -16,10 +16,10 @@ import (
 	"text/template"
 
 	"github.com/BurntSushi/toml"
-	"github.com/abtreece/confd/pkg/backends"
-	"github.com/abtreece/confd/pkg/log"
-	util "github.com/abtreece/confd/pkg/util"
 	"github.com/kelseyhightower/memkv"
+	"github.com/spreedly/confd/pkg/backends"
+	"github.com/spreedly/confd/pkg/log"
+	util "github.com/spreedly/confd/pkg/util"
 )
 
 type Config struct {

@@ -2,19 +2,19 @@
 
 ### Binary Download
 
-Currently confd ships binaries for OS X and Linux 64bit systems. You can download the latest release from [GitHub](https://github.com/abtreece/confd/releases)
+Currently confd ships binaries for OS X and Linux 64bit systems. You can download the latest release from [GitHub](https://github.com/spreedly/confd/releases)
 
 #### OS X
 
 ```
-$ wget https://github.com/abtreece/confd/releases/download/v0.18.0/confd-0.18.0-darwin-amd64
+$ wget https://github.com/spreedly/confd/releases/download/v0.18.0/confd-0.18.0-darwin-amd64
 ```
 
 #### Linux
 
 Download the binary
 ```
-$ wget https://github.com/abtreece/confd/releases/download/v0.18.0/confd-0.18.0-linux-amd64
+$ wget https://github.com/spreedly/confd/releases/download/v0.18.0/confd-0.18.0-linux-amd64
 ```
 Move the binary to an installation path, make it executable, and add to path
 ```
@@ -50,15 +50,15 @@ FROM golang:1.15.8-alpine as confd
 
 ARG CONFD_VERSION=0.18.0
 
-ADD https://github.com/abtreece/confd/archive/v${CONFD_VERSION}.tar.gz /tmp/
+ADD https://github.com/spreedly/confd/archive/v${CONFD_VERSION}.tar.gz /tmp/
 
 RUN apk add --no-cache \
     bzip2 \
     make && \
-  mkdir -p /go/src/github.com/abtreece/confd && \
-  cd /go/src/github.com/abtreece/confd && \
+  mkdir -p /go/src/github.com/spreedly/confd && \
+  cd /go/src/github.com/spreedly/confd && \
   tar --strip-components=1 -zxf /tmp/v${CONFD_VERSION}.tar.gz && \
-  go install github.com/abtreece/confd && \
+  go install github.com/spreedly/confd && \
   rm -rf /tmp/v${CONFD_VERSION}.tar.gz
 
 FROM tomcat:8.5.15-jre8-alpine

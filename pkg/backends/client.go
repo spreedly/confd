@@ -4,16 +4,16 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/abtreece/confd/pkg/backends/consul"
-	"github.com/abtreece/confd/pkg/backends/dynamodb"
-	"github.com/abtreece/confd/pkg/backends/env"
-	"github.com/abtreece/confd/pkg/backends/etcd"
-	"github.com/abtreece/confd/pkg/backends/file"
-	"github.com/abtreece/confd/pkg/backends/redis"
-	"github.com/abtreece/confd/pkg/backends/ssm"
-	"github.com/abtreece/confd/pkg/backends/vault"
-	"github.com/abtreece/confd/pkg/backends/zookeeper"
-	"github.com/abtreece/confd/pkg/log"
+	"github.com/spreedly/confd/pkg/backends/consul"
+	"github.com/spreedly/confd/pkg/backends/dynamodb"
+	"github.com/spreedly/confd/pkg/backends/env"
+	"github.com/spreedly/confd/pkg/backends/etcd"
+	"github.com/spreedly/confd/pkg/backends/file"
+	"github.com/spreedly/confd/pkg/backends/redis"
+	"github.com/spreedly/confd/pkg/backends/ssm"
+	"github.com/spreedly/confd/pkg/backends/vault"
+	"github.com/spreedly/confd/pkg/backends/zookeeper"
+	"github.com/spreedly/confd/pkg/log"
 )
 
 // The StoreClient interface is implemented by objects that can retrieve

@@ -1,4 +1,4 @@
-module github.com/abtreece/confd
+module github.com/spreedly/confd
 
 go 1.18
 
