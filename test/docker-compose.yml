@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   consul:
-    image: consul
+    image: hashicorp/consul
     ports:
       - 8500:8500
 
@@ -26,7 +26,7 @@ services:
       - 6379:6379
 
   vault:
-    image: vault
+    image: hashicorp/vault
     ports:
       - 8200:8200
     environment:
